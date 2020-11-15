@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+      	overflow-y: scroll;
+        position: fixed;
+        font-size: 100%;
+    }
+
+    #background-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    content {
+        width: 800px;
+        height: 800px;
+    }
+    
+    #logo {
+        margin-top: 1%;
+        margin-right: -15%;
+        font-size: 1.2em;
+    }
+
+    #links-text {
+        width: 90%;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 70%;
+        right: -18.9px;
+        height: 92vh;
+        top: 12vh;
+        background-color: #305169;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(120%);   
+        transition: transform 0.5s ease-in;
+        padding: 51%;
+
+        z-index: 100;
+
+    }
+    
+    .burger {
+        display: block;
+    }
+
+    .container {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container2 {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container3 {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .github-link {
+        margin-bottom: 20px;
+    }
+
+    .behance-link {
+        margin-bottom: 20px;
+    }
+
+    .telegram-link {
+        margin-bottom: 20px;
+    }
+
+    .gmail-link {
+        margin-bottom: 20px;
+    }
+
+    .linkedin-link {
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+
+}
+
+.language-settings {
+    display: flex;
+    padding: 1%;
+    text-transform: uppercase;
+    background-color: #2E4968;
+    color: #35E6E6;
+}
+
+.language-settings h1 {
+    margin-left: 40px;
+    font-weight: 200;
+    font-size: 19px;
+    color: white;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+
+header {
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    width: 15%;
+    margin-left: 15%;
+}
+
+#logo-bold {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#logo-light {
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 2% 0% ; 
+    min-height: 3vh;
+    background-color: #305169;
+    border-bottom: 1px solid white;
+    justify-content: space-around;
+}
+
+nav ul a:hover {
+    border-bottom: 3px solid #35E6E6;
+    transition: .2s ease-in;
+}
+
+.active {
+    border-bottom: 3px solid #35E6E6;
+}
+
+
+ul img {
+    width: 2.5vh;
+}
+
+nav ul {
+    max-width: 100%;
+    margin: 0%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: medium;
+    float: right;
+    margin-right: 5%;
+    position: relative;   
+}
+
+.nav-links {
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: 300;
+    float: right;
+    justify-content: space-around;  
+}
+
+.nav-links a :hover {
+    color: #35E6E6;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+
+a:hover {
+    color: #35E6E6;
+}
+
+#contacts-name {
+    color: #C1C1C1;
+    margin-top: 6%;
+    margin-left: 9%;
+    width: 80%;
+    border-bottom: 3px solid #C1C1C1;
+    text-transform: uppercase;
+}
+
+#contacts-name h1 {
+    font-weight: 300;
+}
+
+.background-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 200%;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 200%;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 200%;
+}
+
+.iconify { 
+    width: 48px;
+    height: 48px;
+}
+
+#git-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.github-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+
+.github-link:hover {
+    background-color: #323131;
+    border-color: #323131;
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.github-link a {
+    color: #494949;
+    text-decoration: none;
+}
+
+.github-link a:hover {
+    color: #ffffff;
+}
+
+.github-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em;
+}
+
+#beh-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.behance-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    color: #0056FF;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.behance-link:hover {
+    color: #ffffff;
+    background-color: #0056FF;
+    border-color: #0056FF;
+    transition: all 0.4s ease 0s;
+}
+
+.behance-link a:hover {
+    color: #ffffff;
+
+}
+
+.behance-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em;
+}
+
+.behance-link a {
+    color: #0056FF;
+    text-decoration: none;
+}
+
+#instagram-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.instagram-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.instagram-link:hover {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border-color: #231F20;
+    transition: all 0.4s ease 0s;
+}
+
+.instagram-link a:hover {
+    color: #ffffff;
+}
+
+.instagram-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em;
+}
+
+.instagram-link a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#telegram-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.telegram-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    color: #35AAE6;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.telegram-link:hover {
+    color: #ffffff;
+    background-color: #35AAE6;
+    border-color: #35AAE6;
+    transition: all 0.4s ease 0s;    
+}
+
+.telegram-link a:hover {
+    color: #ffffff;
+}
+
+.telegram-link a {
+    color: #35AAE6;
+    text-decoration: none;
+}
+
+.telegram-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em;
+}
+
+#gmail-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.gmail-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    color: #D54B3D;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.gmail-link:hover {
+    color: #ffffff;
+    background-color: #D54B3D;
+    border-color: #D54B3D;
+    transition: all 0.4s ease 0s;    
+}
+
+.gmail-link a:hover {
+    color: #ffffff;
+}
+
+.gmail-link a {
+    color: #D54B3D;
+    text-decoration: none;
+}
+
+.gmail-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em; 
+}
+
+#facebook-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.facebook-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    color: #494949;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.facebook-link:hover {
+    color: #ffffff;
+    background-color: #3A5898;
+    border-color: #3A5898;
+    transition: all 0.4s ease 0s;    
+}
+
+.facebook-link a:hover {
+    color: #ffffff;
+}
+
+.facebook-link a {
+    color: #3A5898;
+    text-decoration: none;
+}
+
+.facebook-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em;  
+}
+
+#linkedin-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.linkedin-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    color: #494949;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.linkedin-link:hover {
+    color: #ffffff;
+    background-color: #016599;
+    border-color: #016599;
+    transition: all 0.4s ease 0s;    
+}
+
+.linkedin-link a:hover {
+    color: #ffffff;
+}
+
+.linkedin-link a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.linkedin-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em; 
+}
+
+#hh-icon-button {
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.hh-link {
+    width: 337px;
+    height: 116px;
+    background-color: #ffffff;
+    color: #494949;
+    transition: all 0.4s ease 0s;
+
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.hh-link:hover {
+    color: #ffffff;
+    background-color: #D20A11;
+    border-color: #D20A11;
+    transition: all 0.4s ease 0s;    
+}
+
+.hh-link a:hover {
+    color: #ffffff;
+}
+
+.hh-link a {
+    color: #494949;
+    text-decoration: none;
+}
+
+.hh-button h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 30px;
+    text-align: center;
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 1.8em; 
+}

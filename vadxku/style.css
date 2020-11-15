@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+body {
+        overflow-x: hidden;
+        position: fixed;
+    }
+
+    #logo {
+        margin-top: 1%;
+        margin-right: -15%;
+        font-size: 1.2em;
+    }
+
+    #frontenddeveloper-name h1 {
+        margin-top: 35%;
+        justify-content: center;
+        font-size: 6.8vh;
+        font-family: 'Rubik', sans-serif;  
+    }
+
+    #frontenddeveloper-description {
+        width: 100%;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 70%;
+        right: -18.9px;
+        height: 92vh;
+        top: 12vh;
+        background-color: #305169;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(120%);   
+        transition: transform 0.5s ease-in;
+        padding: 57%;
+        
+
+        z-index: 100;
+    }
+
+
+    .burger {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%)!important;
+}
+
+body {
+    background-image: url(/vadxku/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-bottom: 3.6%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.language-settings {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    text-transform: uppercase;
+    background-color: #2E4968;
+    color: #35E6E6;
+}
+
+.language-settings h1 {
+    margin-left: 40px;
+    font-weight: 200;
+    font-size: 19px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    width: 15%;
+    margin-left: 15%; 
+}
+
+#logo-bold {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#logo-light {
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 2% 0% ; 
+    min-height: 3vh;
+    background-color: #305169;
+    border-bottom: 1px solid white;
+    justify-content: space-around; 
+}
+
+ul a:hover {
+    border-bottom: 3px solid #35E6E6;
+    transition: .2s ease-in;
+}
+
+.active {
+    border-bottom: 3px solid #35E6E6;
+}
+
+
+ul img {
+    width: 2.5vh;
+}
+
+
+nav ul {
+    max-width: 100%;
+    margin: 0%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: medium;
+    float: right;
+    margin-right: 5%;
+    position: relative;      
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-left: 35%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: 300;
+    float: right;
+    justify-content: space-around;      
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+
+.nav-links a :hover {
+    color: #35E6E6;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+}
+
+
+#frontenddeveloper-name {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13%;
+    font-size: 6vh;
+    color: white;
+    border-bottom: 10px solid #35E6E6;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+#frontenddeveloper-description h1 {
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 9%;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+#frontenddeveloper-description h2 {
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 9%;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}

@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    #logo {
+        margin-top: 1%;
+        margin-right: -15%;
+        font-size: 1.2em;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 70%;
+        right: -18.9px;
+        height: 92vh;
+        top: 12vh;
+        background-color: #305169;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(120%);   
+        transition: transform 0.5s ease-in;
+        padding: 51%;
+
+        z-index: 100;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .thisweb-bg {
+        min-height: 250px;
+    }
+
+    .backthisisweb {
+        position: absolute;
+        display: inline-block;
+        margin-right: -612px;
+    }
+
+    #button-section {
+        width: 50%;
+        margin-left: 100px;
+        padding-bottom: 15%;
+    }
+
+    .github-button {
+        z-index: 20;
+        max-width: 80px;
+    }
+
+    #github-icon-button {
+        padding-left: 17px;
+        padding-top: 5px;
+    }
+
+    #button-text-github {
+        display: none;  
+    }
+
+    .behance-button {
+        z-index: 20;
+        max-width: 80px;
+    }
+
+    #behance-icon-button {
+        padding-left: 17px;
+        padding-top: 5px;
+    }
+
+    #button-text-behance {
+        display: none;  
+    }
+
+    .backofbuttons {
+        display: inline-block;
+        right: 70%;
+        top: 90px;
+    }
+
+    .behancebutton {
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+.language-settings {
+    display: flex;
+    padding: 1%;
+    text-transform: uppercase;
+    background-color: #2E4968;
+    color: #35E6E6;
+}
+
+.language-settings h1 {
+    margin-left: 40px;
+    font-weight: 200;
+    font-size: 19px;
+    color: white;  
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+body {
+    background-color: #E5E5E5;  
+}
+
+header {
+    width: 100%;   
+}
+
+#logo {
+    display: flex;
+    width: 15%;
+    margin-left: 15%; 
+}
+
+#logo-bold {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#logo-light {
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 2% 0% ; 
+    min-height: 3vh;
+    background-color: #305169;
+    border-bottom: 1px solid white;
+    justify-content: space-around;
+}
+
+ul a:hover {
+    border-bottom: 3px solid #35E6E6;
+    transition: .2s ease-in;
+}
+
+.nav-links .active {
+    border-bottom: 3px solid #35E6E6;
+}
+
+
+ul img {
+    width: 2.5vh;
+}
+
+nav ul {
+    max-width: 100%;
+    margin: 0%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: medium;
+    float: right;
+    margin-right: 5%;
+    position: relative;      
+}
+
+.nav-links {
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: 300;
+    float: right;
+    justify-content: space-around;     
+}
+
+.nav-links a :hover {
+    color: #35E6E6;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+li {
+    display: inline;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+
+}
+
+a:hover {
+    color: #35E6E6;
+    
+}
+
+content {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    background-color: #FFFCFC;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#portfolio-name {
+    color: #C1C1C1;
+    margin-top: 6%;
+    margin-left: 9%;
+    width: 80%;
+    border-bottom: 3px solid #C1C1C1;
+    text-transform: uppercase;
+}
+
+#portfolio-name h1 {
+    font-weight: 300;
+}
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: content-box;
+    align-content: center;
+    margin-top: 5%;
+}
+
+.box-shadow-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+}
+
+.content-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 680px;
+    height: 160px;
+
+    background-color: #ffffff75;
+}
+
+.thisweb-name {
+    margin-left: 10px;
+}
+
+.content-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    height: 160px;
+
+    background-color: #ffffff;
+}
+
+.backofbuttons {
+    display: inline-flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.back-figma-small {
+    width: 63px;
+    height: 64px;
+    background-color: #2D2D35;
+    border-radius: 17px;
+}
+
+.back-figma-small:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#figma-iconsm {
+    color: #ffffff;
+    width: 23px;
+    height: 35px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.back-github-small {
+    width: 63px;
+    height: 64px;
+    background-color: #2D2D35;
+    border-radius: 17px;
+}
+
+.back-github-small:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#github-iconsm {
+    color: #ffffff;
+    width: 34px;
+    height: 33px;
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+.back-behance-small {
+    width: 63px;
+    height: 64px;
+    background-color: #2D2D35;
+    border-radius: 17px;  
+}
+
+.back-behance-small:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#behance-iconsm {
+    color: #ffffff;
+    width: 33px;
+    height: 33px;
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+.content-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 1223px;
+    height: 208px;
+}
+
+.description-below {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    height: 30px;
+}
+
+.description-below h4 {
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.click-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.githubbutton {
+    display: inline-flex;
+    justify-content: center;
+    width: 296px;
+    height: 81px;
+    background-color: #323131;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon-gith {
+    display: inline-flex;
+    color: #ffffff;
+    align-items: center;
+}
+
+#logo-git {
+    display: flex;
+    width: 46px;
+    height: 46px;
+}
+
+.githubbutton h3 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    margin-left: 10px;
+}
+
+
+.behancebutton {
+    width: 296px;
+    height: 81px;
+    background-color: #0056FF;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon-behanc {
+    display: inline-flex;
+    color: #ffffff;
+    align-items: center;
+}
+
+#logo-beh {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    margin-top: 15px;
+}
+
+.behancebutton h3 {
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.content-four {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1223px;
+    height: 700px;   
+}
+
+
+#tabone {
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #323131;
+    height: 629px;
+    border-radius: 14px;
+    padding-top: 8%;
+}
+
+#tabtwo {
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0056FF;
+    height: 629px;
+    border-radius: 14px;
+    padding-top: 8%;
+}
+
+
+.click-buttons {
+    overflow: hidden;
+}
+
+.click-buttons h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-left: -60px;
+    position: relative;
+    display: inline-flex;
+    bottom: 6px;  
+
+} 
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .tabcontent {
+    display: none;
+}
+
+.background-block-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: 174px;
+    margin: auto;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.block-one-icon {
+    justify-content: center;
+    align-self: center; 
+}
+
+.block-one-name h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #323131;
+}
+
+.block-one-name a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.background-block-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: 174px;
+    margin: auto;
+    margin-top: 3%; 
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.block-two-icon {
+    justify-content: center;
+    align-self: center;
+}
+
+.block-two-name h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #323131;
+}
+
+.block-two-name a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+

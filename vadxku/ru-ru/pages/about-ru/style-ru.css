@@ -1,0 +1,1112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #logo {
+        margin-top: 1%;
+        margin-right: -15%;
+        font-size: 1.2em;
+    }
+
+    .nav-links {
+        position: fixed;
+        width: 70%;
+        right: -18.9px;
+        height: 92vh;
+        top: 12vh;
+        background-color: #305169;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(120%);   
+        transition: transform 0.5s ease-in;
+        padding: 51%;
+
+        z-index: 100;
+    }
+    
+    .burger {
+        display: block;
+    }
+
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+
+}
+
+.language-settings {
+    display: flex;
+    padding: 1%;
+    text-transform: uppercase;
+    background-color: #2E4968;
+    color: #ffffff;
+}
+
+.language-settings h1 {
+    margin-left: 40px;
+    font-weight: 200;
+    font-size: 19px;
+    color: white;
+}
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+body {
+    background-color: #E5E5E5;
+
+}
+
+header {
+    width: 100%;
+    
+}
+
+#logo {
+    display: flex;
+    width: 15%;
+    margin-left: 15%;
+    
+}
+
+#logo-bold {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;  
+
+}
+
+#logo-light {
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 2% 0% ; 
+    min-height: 3vh;
+    background-color: #305169;
+    border-bottom: 1px solid white;
+    justify-content: space-around;   
+}
+
+ul a:hover {
+    border-bottom: 3px solid #35E6E6;
+    transition: .2s ease-in;
+}
+
+.active {
+    border-bottom: 3px solid #35E6E6;
+}
+
+
+ul img {
+    width: 2.5vh;
+}
+
+nav ul {
+    max-width: 100%;
+    margin: 0%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: medium;
+    float: right;
+    margin-right: 5%;
+    position: relative;     
+}
+
+.nav-links {
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: 300;
+    float: right;
+    justify-content: space-around;      
+}
+
+.nav-links a :hover {
+    color: #35E6E6;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+li {
+    display: inline; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+
+.language-settings a {
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+
+a:hover {
+    color: #35E6E6; 
+}
+
+#about-name {
+    color: #C1C1C1;
+    margin-top: 6%;
+    margin-left: 10%;
+    width: 80%;
+    border-bottom: 3px solid #C1C1C1;
+    text-transform: uppercase;
+}
+
+#about-name h1 {
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 700px) {
+    .html-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .css-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .js-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .saas-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .hs-k {
+        flex-direction: column;
+        
+    }
+
+    .ps-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .adobeIl-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .adobexd-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .figma-button h1 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    #item-knowledge {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #item-gd {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .flexbox-ide {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #item-vsc {
+        width: 87%;   
+        margin-left: 6%;
+    }
+
+    .vsc-button h1 {
+        justify-content: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    #item-atom {
+        width: 87%;   
+        margin-left: 6%;
+    }
+
+    .atom-button h1 {
+        justify-content: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    .flexbox-cms {
+        flex-direction: column;   
+    }
+
+    #item-wordpress {
+        width: 87%;   
+        margin-left: 6%;
+    }
+
+    .wordpress-button h1 {
+        justify-content: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+
+    #item-joomla {
+        width: 87%;   
+        margin-left: 6%;
+    }
+
+    .joomla-button h1 {
+        justify-content: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 200;
+        font-size: 2.3vh;
+    }
+    
+}
+
+.iconify {
+    width: 30px;
+    height: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: content-box;
+    align-content: center;
+    margin-top: 5%;
+}
+
+.background-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 80%;  
+}
+
+.background-content-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.content-one {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+.avatar img {
+    object-fit: contain;
+    width: 240px;
+    height: 320px;
+    border-radius: 23px;
+}
+
+.full-name {
+    margin-top: 2%;
+}
+
+.full-name h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2.3vh;
+}
+
+.short-facts {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 7px;
+}
+
+.language-knowledge {
+    margin-top: -25px;
+    margin-left: 40px;
+}
+
+#icon-language {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#icon-location {
+    width: 20px;
+    height: 20px; 
+    margin-left: 10px;
+}
+
+.location-name {
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.status h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 2.3vh;
+    color: #1ED761;
+}
+
+.status h1:hover {
+    font-weight: 500;
+    cursor: none;
+    color: #ffffff;
+    background-color:#1ED761;
+}
+
+
+.flexbox-about {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 690px;
+    padding: 10px;
+    height: auto;
+}
+
+.language-knowledge h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+.location-name h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+.about-me-banner {
+    width: 180px;
+    background-color: #2E4968;
+    color: #ffffff;
+}
+
+.about-me-banner h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.about-me-description {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.about-me-description h2 {
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.list-banner {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #2E4968;
+    color: #ffffff;
+}
+
+.list-banner h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.list {
+    margin-top: 10px;
+}
+
+.list-one h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.list-two h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.list-three h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.list-four h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.content-two {
+    display: flex;
+    float: 10%;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skills-header {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.skills-name h1 {
+    margin-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.html-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.html-button:hover {
+    background-color: #F16529;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.html-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.css-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.css-button:hover {
+    background-color: #409AD6;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.css-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.js-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.js-button:hover {
+    background-color: #FFD93A;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.js-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.saas-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.saas-button:hover {
+    background-color: #CF649A;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.saas-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.content-three {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.graphic-design-header {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.graphic-design-name h1 {
+    margin-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.ps-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.ps-button:hover {
+    background-color: #001E36;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #31A8FF;
+    transition: all 0.4s ease 0s;
+}
+
+.ps-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.adobeIl-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.adobeIl-button:hover {
+    background-color: #330000;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #FF9A00;
+    transition: all 0.4s ease 0s;
+}
+
+.adobeIl-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.adobexd-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.adobexd-button:hover {
+    background-color: #470137;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #FF61F6;
+    transition: all 0.4s ease 0s;
+}
+
+.adobexd-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.figma-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.figma-button:hover {
+    background: rgb(10,207,131);
+    background: linear-gradient(328deg, rgba(10,207,131,1) 0%, rgba(26,188,254,1) 27%, rgba(162,89,255,1) 56%, rgba(255,114,98,1) 83%, rgba(242,78,30,1) 100%);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #232323;
+    transition: all 0.4s ease 0s;
+}
+
+.figma-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content-four {
+    display: flex;
+    float: 10%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ide-header {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.ide-name h1 {
+    margin-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.flexbox-ide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px; 
+}
+
+.vsc-button {
+    padding-top: 50px;
+    display: inline-flex;
+    justify-content: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.vsc-button:hover {
+    background-color: #46AFF3;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.vsc-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.atom-button {
+    padding-top: 50px;
+    display: inline-flex;
+    justify-content: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.atom-button:hover {
+    background-color: #A8DA95;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.atom-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content-five {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cms-header {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.cms-name h1 {
+    margin-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+}
+
+.flexbox-cms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.wordpress-button {
+    padding-top: 50px;
+    display: inline-flex;
+    justify-content: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.wordpress-button:hover {
+    background-color: #207297;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.wordpress-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.joomla-button {
+    padding-top: 50px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 337px;
+    height: 116px; 
+    padding-bottom: 80px;
+    padding-left: 4px;
+
+    background-color: #ffffff;
+    border-radius: 23px;
+}
+
+.joomla-button:hover {
+    background-color: #193E6F;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.joomla-button h1 {
+    padding-bottom: 20px;
+    display: inline-flex;
+    margin-left: 20px;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    margin-top: 10%;
+
+    background-color: #2B2B2B;
+    color: #ffffff;
+}
+
+.text-footer h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+.text-footer h2 {
+    font-size: 2vw;
+    font-weight: 300;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.scroller-knowledge {
+    padding-top: 50px;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    grid-template-columns: 20px 1fr 20px;
+    align-content: start;
+  }
+  
+  .scroller-knowledge > * {
+    grid-column: 2 / -2;
+  }
+  
+  .scroller-knowledge > .full {
+    grid-column: 1 / -1;
+  }
+  
+  .scroller-knowledge {
+    overflow-y: scroll;
+    overflow: hidden;
+    
+    }
+
+  .scroller-knowledge ::-webkit-scrollbar {
+    width: 0;
+    
+  }
+
+  #item-knowledge {
+    padding: calc(var(--gutter) / 1 * 1.5);
+    display: flex;
+    flex-direction: column;
+  }
+
+   .scroller-graphic-design {
+    padding-top: 50px;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    grid-template-columns: 20px 1fr 20px;
+    align-content: start;
+    
+  }
+  
+  .scroller-graphic-design > * {
+    grid-column: 2 / -2;
+  }
+  
+  .scroller-graphic-design > .full {
+    grid-column: 1 / -1;
+    
+  }
+  
+  .hs-k {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(4, calc(50% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+
+    
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+    
+  }
+  
+  :root {
+    --gutter: 10px;
+
+  }
+  
+  
+  .scroller-graphic-design {
+    overflow-y: scroll;
+    overflow: hidden;
+    
+    }
+
+  .scroller-graphic-design ::-webkit-scrollbar {
+    width: 0;
+    
+  }
+
+  #item-gd {
+    padding: calc(var(--gutter) / 1 * 1.5);
+    display: flex;
+    flex-direction: column;
+  }

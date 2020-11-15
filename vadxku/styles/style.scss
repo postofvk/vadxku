@@ -1,0 +1,86 @@
+$textColor: white;
+$underline: #35E6E6;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+}
+
+body {
+    background-color: #E5E5E5;
+    
+}
+
+header {
+    width: 100%;
+}
+
+#logo-bold {
+    color: $textColor;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left: 10%;
+
+}
+
+#logo-light {
+    color: $textColor;
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+
+nav {
+    background-color: #2E4968;
+    width: 100%;
+    padding: 2% 0% ; 
+    position: fixed;
+    
+}
+
+.icon-home-underline {
+    margin-top: 23px;
+    width: 8%;
+    height: 5px;
+    background-color: $underline;
+    color: $underline;
+    position: inherit;
+    
+}
+
+ul img {
+    width: 6.8%;
+    position: inherit;
+
+}
+
+nav ul {
+    margin: 0%;
+    word-spacing: 2em;
+    font-size: 17px;
+    font-weight: medium;
+    float: right;
+    margin-right: 5%;
+    position: relative;
+        
+}
+
+li {
+    display: inline;
+    
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+    transition: .4s;
+    
+
+    /* &:hover {
+        color: #35E6E6;
+    } */
+
+}
+
